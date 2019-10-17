@@ -16,6 +16,20 @@ def plot_regression_line(training_x,training_y,testing_x,testing_y,lin):
     pred_y = lin.predict(training_x)
     plt.scatter(x=training_x,y=training_y,color = 'm',marker='*') #for training
     #plt.scatter(x=testing_x,y=lin.predict(testing_x),color = 'm',marker='*') #for testing
+    """
+    verify equation
+    b1 = coefficient
+    bo = intercept
+    
+    pred_yTest = lin.predict(testing_x)
+    b1 = lin.coef_
+    b0 = lin.intercept_
+
+    predectY_value = b0 + b1*1.5 #take any value of x actual y = 37731
+    print(predectY_value)
+    """
+
+
     plt.plot(training_x,pred_y,color = "r")
     plt.xlabel("Expirence")
     plt.ylabel('salary')
