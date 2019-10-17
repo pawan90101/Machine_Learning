@@ -15,7 +15,7 @@ def estimate_coefficient(real_x, real_y):
 def plot_regression_line(training_x,training_y,testing_x,testing_y,lin):
     pred_y = lin.predict(training_x)
     plt.scatter(x=training_x,y=training_y,color = 'm',marker='*') #for training
-    #plt.scatter(x=testing_x,y=testing_y,color = 'm',marker='*') #for testing
+    #plt.scatter(x=testing_x,y=lin.predict(testing_x),color = 'm',marker='*') #for testing
     plt.plot(training_x,pred_y,color = "r")
     plt.xlabel("Expirence")
     plt.ylabel('salary')
